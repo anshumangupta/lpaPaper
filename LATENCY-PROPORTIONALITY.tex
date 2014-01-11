@@ -1,0 +1,36 @@
+\documentclass[10pt,letter,twocolumn]{article}
+\usepackage{comment}
+\begin{document}
+
+\title{Latency-Proportionality Leads to Clean Application Stacking}
+\author{Anshuman Gupta}
+\date{}
+
+\maketitle
+
+Q. What is Latency Proportionality?
+Ans. Latency proportionality encompasses these properties:
+Number of operations inside a “critical latency bin” for an application are linearly proportional to their latency criticality.
+Number of operations that can be performed for a given “critical latency bin” in a system is linearly proportional to the operation latency.
+
+“If the application’s operations are latency proportional with slope sa and offset oa and the system provides latency proportional throughput with slope st and offset ot, then we can continue to load applications on the system as long as sa<stand oa<ot.”
+
+Q. What is the benefit of latency proportionality?
+Ans. Latency-proportionality ensures that the application performs as expected regardless of system and co-runners. This can be done for complicated critical-latency vs number of operation relations also, but linearity leads to simplification; at the same time, it provides sufficient richness for the applications and systems.
+
+Q. What is critical latency?
+Ans. If an operation takes longer than the critical latency to complete, it ends up on the critical path of execution and increases the application execution time.
+
+Q. How to achieve latency-proportionality for applications?
+Ans. Application is built using latency proportional libraries.
+
+Q. How to create latency-proportional library functions?
+Ans. 
+
+Q. How to achieve latency-proportionality for systems?
+Ans. 
+
+
+
+\end{document}
+
